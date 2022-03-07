@@ -1,0 +1,124 @@
+<html>
+
+<head>
+    <title>
+        Emotion recognation app
+    </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"> </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+
+<body>
+    <center>
+        <h1 class="btn btn-default" id="heading">
+            Emotion recognation app
+        </h1>
+
+        <br>
+        <br>
+
+        <h2 id="list_of_emotions">
+            This model is trained to identify these emotions:
+        </h2>
+
+        <br>
+
+        <h3 class="btn btn-primary" id="cry"> 
+            Crying
+        </h3>
+
+        <hr>
+
+        <h3 class="btn btn-primary" id="sad"> 
+            Sad
+        </h3>
+
+        <hr>
+
+        <h3 class="btn btn-primary" id="Happy"> 
+            Happy
+        </h3>
+
+        <hr>
+
+        <h3 class="btn btn-primary" id="angry"> 
+            Angry
+        </h3>
+
+        <hr>
+
+        <br>
+        <br>
+        <br>
+
+        <label>
+        Webcam View - 
+      </label>
+
+      <div id="camera"> 
+      </div>
+
+      <label> 
+        Output View 
+      </label>
+
+      <div id="output_div">
+      </div>
+
+      <br>
+      <br>
+
+      <button id="take_img" class="btn btn-success" onclick="take_snapshot()">
+        Capture Image
+      </button>
+
+      <br><br>
+
+      <button id="identify_img" class="btn btn-info" onclick="check()">
+        Identify Image
+      </button>
+
+      <br>
+      <br>
+      <br>
+      <br>
+
+      <p style="font-size: 22px;">Object : <span id="result_object_name">
+    </span> </p>
+
+
+ <p style="font-size: 22px;">Accuracy : <span id="result_object_accuracy">
+    </span> </p>
+
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+    </center>
+    <script src="main.js"></script>
+
+</body>
+
+</html>
